@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import AnimeCard from "./components/AnimeCard.vue";
+import NavBar from "./components/NavBar.vue";
 
 const animeList = ref([]);
 const loading = ref(false);
@@ -27,6 +28,10 @@ onMounted(fetchAnime);
 </script>
 
 <template>
+
+<NavBar />
+  <router-view></router-view>
+
   <div class="flex flex-col items-center p-6 bg-gray-100 min-h-screen">
     <h1 class="text-3xl font-bold text-purple-600 mb-6">Top Anime List</h1>
     <button @click="fetchAnime"
