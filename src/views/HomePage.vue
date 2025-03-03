@@ -27,11 +27,11 @@ onMounted(fetchAnime);
 </script>
 
 <template>
-  <div class="flex flex-col items-center p-6 bg-gray-100 min-h-screen">
-    <h1 class="text-3xl font-bold text-purple-600 mb-6">Top Anime List</h1>
+  <div class="flex flex-col items-center p-6 bg-gray-250 min-h-screen">
+    <h1 class="text-3xl font-bold text-purple-600 mb-6">Top Anime Cards</h1>
     <button @click="fetchAnime"
       class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md mb-6 transition">
-      Refresh List
+      Refresh Anime
     </button>
 
     <p v-if="loading" class="text-lg text-gray-600">Loading...</p>
